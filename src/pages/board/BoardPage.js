@@ -69,8 +69,8 @@ export function BoardPage() {
 
 
     return (
-        <div style={{ backgroundColor: '#3179ba' }}>
-            <Board className="container mx-auto" data={{ lanes: dummies }} />
+        <div style={{ backgroundColor: '#68d391' }} className="py-20 sm:px-6 lg:px-24" >
+            <Board style={{ backgroundColor: '#68d391' }} data={{ lanes: dummies }} />
         </div>
     )
 }
