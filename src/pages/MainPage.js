@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React /*, { useState }*/ from 'react';
 import { TopNav } from '../components/TopNav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { HomePage } from './home/HomePage';
 import { BoardPage } from './board/BoardPage';
-import { AboutPage } from './about/AboutPage';
-import { CobaPage } from './coba/CobaPage';
+import { MeetPage } from './meet/MeetPage';
+import { TimePage } from './timeTracker/TimePage';
 
 export default function MainPage() {
     // const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -28,17 +28,14 @@ export default function MainPage() {
                     <Route exact path="/">
                         <HomePage />
                     </Route>
-                    <Route exact path="/home">
-                        <HomePage />
+                    <Route exact path="/timeTracker">
+                        <TimePage />
                     </Route>
                     <Route path="/board">
                         <BoardPage />
                     </Route>
-                    <Route path="/about">
-                        <AboutPage />
-                    </Route>
-                    <Route path="/coba">
-                        <CobaPage /*data={user} changeData={changeData} */ />
+                    <Route path="/meet">
+                        <MeetPage />
                     </Route>
                 </Switch>
             </Router>

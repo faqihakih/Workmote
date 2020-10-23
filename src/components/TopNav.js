@@ -32,15 +32,16 @@ export const TopNav = (/*{ loginStatus }*/) => {
                     </div>
                     <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex-shrink-0">
-                            <img className="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-dark.svg" alt="Workflow logo" />
-                            <img className="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-on-dark.svg" alt="Workflow logo" />
+                            {/* <img className="block lg:hidden h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-dark.svg" alt="Workflow logo" />
+                            <img className="hidden lg:block h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-on-dark.svg" alt="Workflow logo" /> */}
+                            <h1 className="px-3 py-1 rounded-md text-2xl font-medium leading-5 text-gray-300 ">Workmote</h1>
                         </div>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex">
                                 <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-teal-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Dashboard</Link>
-                                <Link to="/home" className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-teal-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Time Tracker</Link>
+                                <Link to="/timeTracker" className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-teal-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Time Tracker</Link>
                                 <Link to="/board" className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-teal-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Projects</Link>
-                                <Link to="/about" className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-teal-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Meet</Link>
+                                <Link to="/meet" className="ml-4 px-3 py-2 rounded-md text-sm font-medium leading-5 text-gray-300 hover:text-white hover:bg-teal-700 focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out">Meet</Link>
                             </div>
                         </div>
                     </div>
