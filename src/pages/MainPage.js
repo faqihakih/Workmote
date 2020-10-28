@@ -1,7 +1,7 @@
 import React /*, { useState }*/ from 'react';
 import { TopNav } from '../components/TopNav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { HomePage } from './home/HomePage';
+import { DashboardPage } from './home/Dashboard';
 import { BoardPage } from './board/BoardPage';
 import { MeetPage } from './meet/MeetPage';
 import { TimePage } from './timeTracker/TimePage';
@@ -26,7 +26,10 @@ export default function MainPage() {
                 <TopNav /*loginStatus={isLoggedIn}*/ />
                 <Switch>
                     <Route exact path="/">
-                        <HomePage />
+                        <DashboardPage />
+                    </Route>
+                    <Route exact path="/dashboard">
+                        <DashboardPage />
                     </Route>
                     <Route exact path="/timeTracker">
                         <TimePage />

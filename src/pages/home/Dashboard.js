@@ -2,36 +2,35 @@ import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-export function HomePage() {
+export function DashboardPage() {
     // const name = "uzumaki bayu"
     const [startDate, setStartDate] = useState(new Date());
     return (
-        <div className="py-20 bg-white">
-
-            <div className="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8 bg-green-500 p-10 rounded-2xl">
-                <div className="Pilih flex justify-end">
-                    <div class="inline-block relative w-64 mx-8">
-                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
-                            <option>Pilih Projek</option>
-                            <option>Projek 1</option>
-                            <option>Projek 2</option>
-                            <option>Projek 4</option>
-                            <option>Projek 5</option>
-                        </select>
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
-                        </div>
-                    </div>
-                    <div class="inline-block relative w-36">
-                        <DatePicker
-                            className="border rounded-xl h-10 px-8"
-                            selected={startDate}
-                            onChange={date => setStartDate(date)}
-                            isClearable
-                            placeholderText="Pilih Hari"
-                        />
+        <div className="pt-16 bg-white">
+            <div className="Pilih flex justify-center m-5">
+                <div class="inline-block relative w-64 mx-8">
+                    <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
+                        <option>Pilih Projek</option>
+                        <option>Projek 1</option>
+                        <option>Projek 2</option>
+                        <option>Projek 4</option>
+                        <option>Projek 5</option>
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                     </div>
                 </div>
+                <div class="inline-block relative w-36">
+                    <DatePicker
+                        className="border rounded-xl h-10 px-8"
+                        selected={startDate}
+                        onChange={date => setStartDate(date)}
+                        isClearable
+                        placeholderText="Pilih Hari"
+                    />
+                </div>
+            </div>
+            <div className="max-w-screen-xl mx-auto px-2 sm:px-6 lg:px-8 bg-green-500 p-10 rounded-2xl shadow-lg">
                 <div className="mt-5">
                     <ul className="md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
                         <li className="border p-5 rounded-xl h-24 bg-white">
