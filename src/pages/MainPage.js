@@ -34,10 +34,10 @@ export default function MainPage() {
                     <Route exact path="/timeTracker">
                         <TimePage />
                     </Route>
-                    <Route path="/board">
+                    <Route path="/taks">
                         <BoardPage />
                     </Route>
-                    <Route path="/meet">
+                    <Route path="/conservasion">
                         <MeetPage />
                     </Route>
                 </Switch>

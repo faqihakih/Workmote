@@ -72,7 +72,7 @@ export function TimePage() {
     };
 
     return (
-        <div className="pt-20 text-white">
+        <div className="pt-20 time">
             <div className="flex justify-evenly m-5 text-black">
                 <div class="inline-block relative w-64 mx-8">
                     <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
@@ -95,33 +95,33 @@ export function TimePage() {
                         placeholderText="Pilih Hari"
                     />
                 </div>
-                <div class="inline-block relative w-64 mx-8">
-                    <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
-                        <option>Pilih Taks</option>
-                        <option>Taks 1</option>
-                        <option>Taks 2</option>
-                        <option>Taks 4</option>
-                        <option>Taks 5</option>
-                    </select>
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
-                    </div>
-                </div>
             </div>
-            <div className="flex justify-center">
-                <div className="w-48 h-48 flex justify-center items-center rounded shadow-lg m-8 bg-green-400">
-                    <div className="px-6 py-4">
-                        <div className="font-black text-white text-5xl center">10</div>
-                        <p className="text-gray-700 font-bold text-white">
-                            Hour in Day
-          </p>
-                    </div>
-                </div>
+            <div className="container mx-auto flex justify-center">
                 <div className="w-2/3 m-8 flex justify-center">
                     <ReactFC  {...chartConfigs} className="rounded-2xl shadow-lg" />
                 </div>
+                <div className="p-4 m-5 md:w-1/2 w-full">
+                    <div className="h-56 kotak shadow radius">
+                        <h2 className="text-center text-3xl underline judulDua text-white">Waktu Kerja Tim</h2>
+                        <div className="tim">
+                            <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                            <p className="leading-relaxed mt-2">Faqih Zada</p>
+                            <p className="leading-relaxed mt-2">8 Jam</p>
+                        </div>
+                        <div className="tim">
+                            <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                            <p className="leading-relaxed mt-2">Ade Sug</p>
+                            <p className="leading-relaxed mt-2">8 Jam</p>
+                        </div>
+                        <div className="tim">
+                            <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
+                            <p className="leading-relaxed mt-2">Ziyan F</p>
+                            <p className="leading-relaxed mt-2">8 Jam</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="bg-green-400 kontener">
+            <div className="kotak shadow rounded-2xl kontener">
                 <h3 className="text-center text-black font-bold text-3xl">Hasil Tangkap Layar</h3>
                 <div className="grid galery gap-4 text-black">
                     <div className="item">Tangkap layar 1</div>

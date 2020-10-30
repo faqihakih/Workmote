@@ -15,6 +15,8 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
   <!--
@@ -28,6 +30,81 @@
     -->
   <title>React App</title>
   <style>
+    .nav {
+      font-family: 'Raleway', sans-serif;
+      background-color: #E0E5EC;
+      color: #04555C;
+    }
+
+    .judul {
+      font-family: 'Raleway', sans-serif;
+      /* background-color: #E0E5EC; */
+      color: #04555C;
+    }
+
+    .judulDua {
+      font-family: 'Raleway', sans-serif;
+      /* background-color: #E0E5EC; */
+      background-color: #04555C;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+
+    .radius {
+      border-radius: 20px;
+    }
+
+    .tbNav {
+      padding: 6px 20px;
+      border-radius: 30px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .tbl {
+      background-color: #04555C;
+      color: white;
+      padding: 6px 30px;
+      border-radius: 30px;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .tbNav:focus {
+      background-color: #04555C;
+    }
+
+    .tbNav:hover {
+      background-color: #04555C;
+    }
+
+    body {
+      background-color: #E0E5EC;
+    }
+
+    .dashboard {
+      font-family: 'Poppins', sans-serif;
+      color: #04555C;
+    }
+
+    .time {
+      font-family: 'Poppins', sans-serif;
+      color: #04555C;
+    }
+
+    .kotak {
+      background-color: #E0E5EC;
+    }
+
+    .kotakDua {
+      background-color: #E9EFF6;
+    }
+
+    .tim {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid #04555C;
+    }
+
     .kontener {
       width: 80%;
       margin: 10px auto;
@@ -38,16 +115,17 @@
       grid-template-columns: repeat(auto-fill, 200px);
       display: flex;
       justify-content: space-evenly;
-      background-color: #68d391;
+      /* background-color: #68d391; */
       padding: 10px;
     }
 
     .item {
-      background-color: #E5E5E5;
+      background-color: #04555C;
       height: 200px;
       display: flex;
       justify-content: center;
       align-items: center;
+      color: white;
     }
   </style>
 </head>
