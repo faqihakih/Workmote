@@ -17,8 +17,8 @@ export const TopNav = (/*{ loginStatus }*/) => {
                             data-inline="false"></span>Time Tracker</Link>
                     <Link to="/taks" className="mr-5 hover:text-white tbNav focus:text-white"><span class="iconify inline-block mr-2" width="24px" data-icon="bi:list"
                         data-inline="false"></span>Taks</Link>
-                    <Link to="/conservasion" className="mr-5 hover:text-white tbNav focus:text-white"><span class="iconify inline-block mr-2" width="24px" data-icon="mdi:message-video"
-                        data-inline="false"></span>Conservasion</Link>
+                    <Link to="/conversation" className="mr-5 hover:text-white tbNav focus:text-white"><span class="iconify inline-block mr-2" width="24px" data-icon="mdi:message-video"
+                        data-inline="false"></span>Conversation</Link>
                 </nav>
                 <div className="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
                     <button className="p-1 border-2 border-transparent text-gray-400 rounded-full hover:text-white focus:outline-none focus:text-white focus:bg-gray-700 transition duration-150 ease-in-out" aria-label="Notifications">

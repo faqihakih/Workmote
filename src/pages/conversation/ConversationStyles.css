@@ -1,0 +1,91 @@
+.holder {
+    flex-direction: column;
+    flex: 1;
+}
+
+.myroot{
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: "row";
+}
+
+.master{
+    /* padding-top: 160; */
+    overflow-y: scroll;
+    height: 100vh;
+    padding-top: 6.5%;
+    overflow-x: scroll;
+}
+
+.detail{
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.5%;
+    justify-content: space-between;
+    /* overflow-y: scroll; */
+    height: 100vh;
+    flex-grow: 4;
+}
+
+.searchProject {
+    margin:0.2em;
+    align-self: center;
+}
+
+.messageContainer {
+    flex-grow: 1;
+    background-color: khaki;
+    /* position: relative; */
+    position: absolute;
+    bottom: 0;
+    padding: 1% 1% 1.5% 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.messageInput {
+}
+
+
+.messageSend {
+}
+
+.chatContent{
+    height: 100vh;
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.chatInput {
+    background-color: lawngreen;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: inherit;
+    position: fixed;
+    bottom: 0;
+}
+
+.detail-top{
+    display: flex;
+    flex: 1;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-self: stretch;
+    align-content: stretch;
+    background-color: lightcoral;
+}
+
+.detail-bottom{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    justify-content: space-between;
+    background-color: lightpink;
+}
+
+.messageBox{
+    display: flex;
+    flex: 1;
+}

@@ -5,6 +5,7 @@ import { DashboardPage } from './home/Dashboard';
 import { BoardPage } from './board/BoardPage';
 import { MeetPage } from './meet/MeetPage';
 import { TimePage } from './timeTracker/TimePage';
+import { ConversationPage } from './conversation/ConverSationPage';
 
 export default function MainPage() {
     // const [isLoggedIn, setIsLoggedIn] = useState(false)
@@ -23,7 +24,9 @@ export default function MainPage() {
     return (
         <div>
             <Router>
-                <TopNav /*loginStatus={isLoggedIn}*/ />
+                <div className="chain">
+                <TopNav  />
+                <div>
                 <Switch>
                     <Route exact path="/">
                         <DashboardPage />
@@ -37,10 +40,14 @@ export default function MainPage() {
                     <Route path="/taks">
                         <BoardPage />
                     </Route>
-                    <Route path="/conservasion">
-                        <MeetPage />
+                    <Route path="/conversation">
+                        <ConversationPage />
                     </Route>
-                </Switch>
+                </Switch>                    
+                </div>
+
+                </div>
+
             </Router>
 
         </div>
