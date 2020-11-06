@@ -70,11 +70,11 @@
 .detail-top{
     display: flex;
     flex: 1;
+    padding: 5%;
     overflow-y: scroll;
     flex-direction: column;
     align-self: stretch;
     align-content: stretch;
-    background-color: lightcoral;
 }
 
 .detail-bottom{
@@ -88,4 +88,13 @@
 .messageBox{
     display: flex;
     flex: 1;
+}
+
+.projectItem {
+    padding: 6%;
+}
+
+.projectItemSelected {
+    padding: 6%;
+    color: lawngreen;
 }

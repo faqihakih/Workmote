@@ -1,22 +1,21 @@
 import React, { useState, useEffect } from "react";
 import "./ConverstationStyles.css";
 
-export const ConversationContainer = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    const temp = [];
-    for (let i = 0; i < 111; i++) {
-      temp.push("Project " + i.toString());
-    }
-    setProjects(temp);
-  }, []);
-
+export const ConversationContainer = ({ selectedChat }) => {
   return (
     <div className="detail">
       <div className="detail-top">
         {
-          projects.map((p) => (<h1>{p}</h1>))
+          selectedChat.chats.map((c) => {
+            return (
+              <div className={c.is_me ? "rightChat" : "leftChat"}>
+                <h3>{c.sender.name}</h3>
+                <h4>{c.message}</h4>
+                <p>{c.date}</p>
+              </div>
+
+            )
+          })
         }
       </div>
       <div className="detail-bottom">
