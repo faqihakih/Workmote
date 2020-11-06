@@ -1,0 +1,7 @@
+.rightChat {
+    align-self: flex-end;
+}
+
+.leftChat {
+    align-self: flex-start;
+}

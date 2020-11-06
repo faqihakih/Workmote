@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "id_project":1,
+        "chats": [
+            {
+                "id": 1,
+                "message": "Hello world",
+                "is_me": false,
+                "date": "2 weeks ago",
+                "sender": {
+                    "id": 2,
+                    "name": "Udin gambut"
+                }
+            },
+            {
+                "id": 2,
+                "message": "Hello juga",
+                "is_me": true,
+                "date": "2 weeks ago",
+                "sender": {
+                    "id": 1,
+                    "name": "Me"
+                }
+            },
+            {
+                "id": 3,
+                "message": "Ashiap",
+                "is_me": false,
+                "date": "a weeks ago",
+                "sender": {
+                    "id": 3,
+                    "name": "Gandalf"
+                }
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "id_project":2,
+        "chats": [
+            {
+                "id": 1,
+                "message": "Gelud online",
+                "is_me": false,
+                "date": "2 weeks ago",
+                "sender": {
+                    "id": 2,
+                    "name": "Udin gambut"
+                }
+            },
+            {
+                "id": 2,
+                "message": "Seki?",
+                "is_me": true,
+                "date": "2 weeks ago",
+                "sender": {
+                    "id": 1,
+                    "name": "Me"
+                }
+            },
+            {
+                "id": 3,
+                "message": "Wani????!!",
+                "is_me": false,
+                "date": "a weeks ago",
+                "sender": {
+                    "id": 3,
+                    "name": "Gandalf"
+                }
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "id_project":3,
+        "chats": [
+            {
+                "id": 1,
+                "message": "Posisimu di mana?",
+                "is_me": false,
+                "date": "2 weeks ago",
+                "sender": {
+                    "id": 2,
+                    "name": "Udin gambut"
+                }
+            },
+            {
+                "id": 2,
+                "message": "di jonggol",
+                "is_me": true,
+                "date": "2 weeks ago",
+                "sender": {
+                    "id": 1,
+                    "name": "Me"
+                }
+            },
+            {
+                "id": 3,
+                "message": "babeh",
+                "is_me": false,
+                "date": "a weeks ago",
+                "sender": {
+                    "id": 3,
+                    "name": "Gandalf"
+                }
+            }
+        ]
+    }
+]

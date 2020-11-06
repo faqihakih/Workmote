@@ -2,16 +2,8 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-export const ListOfProjects = () => {
-    const [projects, setProjects] = useState([])
+export const ListOfProjects = ({ projects, selected = null, onSelected }) => {
 
-    useEffect(() => {
-        const temp = []
-        for(let i = 0; i< 150; i++){
-            temp.push("Project "+ i.toString())
-        }
-        setProjects(temp)
-    }, [])
     return (
         <div className="master">
             <input type="text" className="searchProject" placeholder="Search..."/>
@@ -19,10 +11,10 @@ export const ListOfProjects = () => {
             {
                 projects.map((project, i) => {
                     return (
-                        <div className="pt-4">
-                            <h4>{project}</h4>
+                        <div onClick={() => onSelected(project)} key={i.toString()} className={ selected !== null && selected.id == project.id ? "projectItemSelected" : "projectItem"}>
+                            <h4>{project.name}</h4>
+                            <p>{project.description}</p>
                         </div>
-
                     )
                 })
             }
