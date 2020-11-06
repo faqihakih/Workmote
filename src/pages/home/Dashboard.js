@@ -88,7 +88,7 @@ export function DashboardPage() {
                 <div className="container px-5 my-10 mx-auto kotak shadow">
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4 md:w-1/2 w-full">
-                            <div className="h-full kotak shadow p-8 rounded">
+                            <div className="h-full kotakDua shadow p-8 rounded">
                                 <h2 className="text-center text-3xl underline judul">Waktu Kerja Tim</h2>
                                 <div className="tim">
                                     <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
@@ -108,7 +108,7 @@ export function DashboardPage() {
                             </div>
                         </div>
                         <div className="p-4 md:w-1/2 w-full">
-                            <div className="h-full kotak shadow p-8 rounded">
+                            <div className="h-full kotakDua shadow p-8 rounded">
                                 <h2 className="text-center text-3xl underline judul">Rencana Terlaksana</h2>
                                 <div className="tim">
                                     <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>

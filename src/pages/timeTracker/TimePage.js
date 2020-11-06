@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
+
 // Include the react-fusioncharts component
 import ReactFC from "react-fusioncharts";
 
@@ -73,7 +74,7 @@ export function TimePage() {
 
     return (
         <div className="pt-20 time">
-            <div className="flex justify-evenly m-5 text-black">
+            <div className="flex justify-end m-5 text-black">
                 <div class="inline-block relative w-64 mx-8">
                     <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
                         <option>Pilih Projek</option>
@@ -96,48 +97,54 @@ export function TimePage() {
                     />
                 </div>
             </div>
-            <div className="container mx-auto flex justify-center">
-                <div className="w-2/3 m-8 flex justify-center">
-                    <ReactFC  {...chartConfigs} className="rounded-2xl shadow-lg" />
-                </div>
-                <div className="p-4 m-5 md:w-1/2 w-full">
-                    <div className="h-56 kotak shadow radius">
-                        <h2 className="text-center text-3xl underline judulDua text-white">Waktu Kerja Tim</h2>
-                        <div className="tim">
-                            <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
-                            <p className="leading-relaxed mt-2">Faqih Zada</p>
-                            <p className="leading-relaxed mt-2">8 Jam</p>
+
+            <div className="kontener px-5 py-24 mx-auto">
+                <div className="flex flex-wrap -m-4">
+                    <div className="p-4 lg:w-2/3 md:1/3 sm:overflow-auto">
+                        <div className="w-2/3 m-8 flex justify-center">
+                            <ReactFC  {...chartConfigs} className="rounded-2xl shadow-lg" />
                         </div>
-                        <div className="tim">
-                            <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
-                            <p className="leading-relaxed mt-2">Ade Sug</p>
-                            <p className="leading-relaxed mt-2">8 Jam</p>
-                        </div>
-                        <div className="tim">
-                            <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
-                            <p className="leading-relaxed mt-2">Ziyan F</p>
-                            <p className="leading-relaxed mt-2">8 Jam</p>
+                    </div>
+                    <div className="p-4 lg:w-1/3 mt-20">
+                        <div className=" kotak shadow radius">
+                            <h2 className="text-center text-3xl underline judulDua text-white mb-10">Waktu Kerja Tim</h2>
+                            <div className="tim">
+                                <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                                <p className="leading-relaxed mt-2">Faqih Zada</p>
+                                <p className="leading-relaxed mt-2">8 Jam</p>
+                            </div>
+                            <div className="tim">
+                                <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                                <p className="leading-relaxed mt-2">Ade Sug</p>
+                                <p className="leading-relaxed mt-2">8 Jam</p>
+                            </div>
+                            <div className="tim">
+                                <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
+                                <p className="leading-relaxed mt-2">Ziyan F</p>
+                                <p className="leading-relaxed mt-2">8 Jam</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="kotak shadow rounded-2xl kontener">
                 <h3 className="text-center text-black font-bold text-3xl">Hasil Tangkap Layar</h3>
                 <div className="grid galery gap-4 text-black">
-                    <div className="item">Tangkap layar 1</div>
-                    <div className="item">Tangkap layar 2</div>
-                    <div className="item">Tangkap layar 3</div>
-                    <div className="item">Tangkap layar 4</div>
-                    <div className="item">Tangkap layar 5</div>
-                    <div className="item">Tangkap layar 6</div>
-                    <div className="item">Tangkap layar 7</div>
-                    <div className="item">Tangkap layar 8</div>
-                    <div className="item">Tangkap layar 9</div>
-                    <div className="item">Tangkap layar 10</div>
-                    <div className="item">Tangkap layar 11</div>
-                    <div className="item">Tangkap layar 12</div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
+                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" /></div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
