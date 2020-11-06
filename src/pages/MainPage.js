@@ -24,9 +24,7 @@ export default function MainPage() {
     return (
         <div>
             <Router>
-                <div className="chain">
                 <TopNav  />
-                <div>
                 <Switch>
                     <Route exact path="/">
                         <DashboardPage />
@@ -44,10 +42,6 @@ export default function MainPage() {
                         <ConversationPage />
                     </Route>
                 </Switch>                    
-                </div>
-
-                </div>
-
             </Router>
 
         </div>
