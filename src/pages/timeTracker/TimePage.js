@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 
 
 // Include the react-fusioncharts component
@@ -15,7 +15,7 @@ import Column2D from "fusioncharts/fusioncharts.charts";
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
@@ -73,8 +73,8 @@ export function TimePage() {
     };
 
     return (
-        <div className="pt-20 time">
-            <div className="flex justify-end m-5 text-black">
+        <div className="pt-64 sm:pt-56 md:pt-40 lg:pt-20  time">
+            <div className="flex justify-end m-5 text-black mb-10">
                 <div class="inline-block relative w-64 mx-8">
                     <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
                         <option>Pilih Projek</option>
@@ -98,33 +98,36 @@ export function TimePage() {
                 </div>
             </div>
 
-            <div className="kontener px-5 py-24 mx-auto">
+            <div className="container mx-auto">
                 <div className="flex flex-wrap -m-4">
-                    <div className="p-4 lg:w-2/3 md:1/3 sm:overflow-auto">
-                        <div className="w-2/3 m-8 flex justify-center">
-                            <ReactFC  {...chartConfigs} className="rounded-2xl shadow-lg" />
+                    <div className="p-4 mx-auto kartu w-5/6 sm:w-2/3 md:w-2/3 lg:w-2/3 xl:w-2/3">
+                        <div className="w-full">
+                            <ReactFC  {...chartConfigs} className="overflow-auto" />
                         </div>
                     </div>
-                    <div className="p-4 lg:w-1/3 mt-20">
-                        <div className=" kotak shadow radius">
-                            <h2 className="text-center text-3xl underline judulDua text-white mb-10">Waktu Kerja Tim</h2>
-                            <div className="tim">
-                                <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
-                                <p className="leading-relaxed mt-2">Faqih Zada</p>
-                                <p className="leading-relaxed mt-2">8 Jam</p>
-                            </div>
-                            <div className="tim">
-                                <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
-                                <p className="leading-relaxed mt-2">Ade Sug</p>
-                                <p className="leading-relaxed mt-2">8 Jam</p>
-                            </div>
-                            <div className="tim">
-                                <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
-                                <p className="leading-relaxed mt-2">Ziyan F</p>
-                                <p className="leading-relaxed mt-2">8 Jam</p>
+                    <div class="p-4 mx-auto lg:w-1/3 md:w-full">
+                        <div class="flex kotak shadow rounded-2xl p-8 sm:flex-row flex-col">
+                            <div class="flex-grow kotakDua">
+                                <h2 className="text-center text-3xl underline judulDua text-white mb-10">Waktu Kerja Tim</h2>
+                                <div className="tim">
+                                    <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                                    <p className="leading-relaxed mt-2">Faqih Zada</p>
+                                    <p className="leading-relaxed mt-2">8 Jam</p>
+                                </div>
+                                <div className="tim">
+                                    <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                                    <p className="leading-relaxed mt-2">Ade Sug</p>
+                                    <p className="leading-relaxed mt-2">8 Jam</p>
+                                </div>
+                                <div className="tim">
+                                    <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
+                                    <p className="leading-relaxed mt-2">Ziyan F</p>
+                                    <p className="leading-relaxed mt-2">8 Jam</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 

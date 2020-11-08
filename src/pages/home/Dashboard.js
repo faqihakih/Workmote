@@ -6,12 +6,12 @@ export function DashboardPage() {
     // const name = "uzumaki bayu"
     const [startDate, setStartDate] = useState(new Date());
     return (
-        <div className="pt-16 dashboard">
-            <div className="Pilih flex justify-evenly mt-16">
-                <Link to="/dashboard" className="tbl">
+        <div className="pt-64 sm:pt-56 md:pt-40 lg:pt-16 dashboard">
+            <div className="Pilih flex justify-evenly mt-16 ml-10 sm:ml-0 md:ml-0 lg:ml-0">
+                <Link to="/dashboard" className="tbl mt-6 sm:mt-0 md:mt-0 lg:mt-0">
                     Start</Link>
                 <div>
-                    <div class="inline-block relative w-64 mx-8">
+                    <div class="inline-block relative w-64 mx-8 mb-3">
                         <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
                             <option>Pilih Projek</option>
                             <option>Projek 1</option>
@@ -23,7 +23,7 @@ export function DashboardPage() {
                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                         </div>
                     </div>
-                    <div className="inline-block relative w-36 shadow rounded">
+                    <div className="inline-block relative w-64 shadow rounded mx-8">
                         <DatePicker
                             className="border rounded-xl h-10 px-8"
                             selected={startDate}
@@ -85,10 +85,10 @@ export function DashboardPage() {
             </div>
 
             <section className="body-font">
-                <div className="container px-5 my-10 mx-auto kotak shadow">
+                <div className="container px-5 my-10 mx-auto kotak rounded-xl shadow p-10">
                     <div className="flex flex-wrap -m-4">
                         <div className="p-4 md:w-1/2 w-full">
-                            <div className="h-full kotakDua shadow p-8 rounded">
+                            <div className="h-full kotakDua shadow p-8 rounded-xl">
                                 <h2 className="text-center text-3xl underline judul">Waktu Kerja Tim</h2>
                                 <div className="tim">
                                     <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
@@ -108,7 +108,7 @@ export function DashboardPage() {
                             </div>
                         </div>
                         <div className="p-4 md:w-1/2 w-full">
-                            <div className="h-full kotakDua shadow p-8 rounded">
+                            <div className="h-full kotakDua shadow p-8 rounded-xl">
                                 <h2 className="text-center text-3xl underline judul">Rencana Terlaksana</h2>
                                 <div className="tim">
                                     <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>

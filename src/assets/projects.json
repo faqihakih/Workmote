@@ -1,18 +1,18 @@
 {
     "projects": [
         {
-            "id":1,
-            "name": "Project A",
+            "id": 1,
+            "name": "Project 1",
             "description": "Lorem ipsum dolor sit amet"
         },
         {
-            "id":2,
-            "name": "Project B",
+            "id": 2,
+            "name": "Project 2",
             "description": "Lorem ipsum dolor sit amet"
         },
         {
-            "id":3,
-            "name": "Project C",
+            "id": 3,
+            "name": "Project 3",
             "description": "Lorem ipsum dolor sit amet"
         }
     ]

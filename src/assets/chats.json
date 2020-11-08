@@ -1,16 +1,16 @@
 [
     {
         "id": 1,
-        "id_project":1,
+        "id_project": 1,
         "chats": [
             {
                 "id": 1,
                 "message": "Hello world",
                 "is_me": false,
-                "date": "2 weeks ago",
+                "date": "1 minute ago",
                 "sender": {
                     "id": 2,
-                    "name": "Udin gambut"
+                    "name": "Faqih Zada"
                 }
             },
             {
@@ -25,19 +25,19 @@
             },
             {
                 "id": 3,
-                "message": "Ashiap",
+                "message": "@AdeSug Taks Sudah Ditambahkan",
                 "is_me": false,
                 "date": "a weeks ago",
                 "sender": {
                     "id": 3,
-                    "name": "Gandalf"
+                    "name": "Ziyan"
                 }
             }
         ]
     },
     {
         "id": 2,
-        "id_project":2,
+        "id_project": 2,
         "chats": [
             {
                 "id": 1,
@@ -46,7 +46,7 @@
                 "date": "2 weeks ago",
                 "sender": {
                     "id": 2,
-                    "name": "Udin gambut"
+                    "name": "Faqih zada"
                 }
             },
             {
@@ -66,14 +66,14 @@
                 "date": "a weeks ago",
                 "sender": {
                     "id": 3,
-                    "name": "Gandalf"
+                    "name": "Ziyan"
                 }
             }
         ]
     },
     {
         "id": 3,
-        "id_project":3,
+        "id_project": 3,
         "chats": [
             {
                 "id": 1,
@@ -82,7 +82,7 @@
                 "date": "2 weeks ago",
                 "sender": {
                     "id": 2,
-                    "name": "Udin gambut"
+                    "name": "Faqih zada"
                 }
             },
             {
@@ -102,7 +102,7 @@
                 "date": "a weeks ago",
                 "sender": {
                     "id": 3,
-                    "name": "Gandalf"
+                    "name": "Ziyan"
                 }
             }
         ]

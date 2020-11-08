@@ -17,10 +17,10 @@ export function ConversationPage() {
     }
 
     return (
-        <div className="holder">
+        <div className="holder pt-64 sm:pt-56 md:pt-40 lg:pt-20">
             <div className="myroot">
-                <ListOfProjects onSelected={onSelectedProject} selected={selectedProject} projects={projects}/>
-                <ConversationContainer selectedChat={selectedChat}/>
+                <ListOfProjects onSelected={onSelectedProject} selected={selectedProject} projects={projects} />
+                <ConversationContainer selectedChat={selectedChat} />
             </div>
         </div>
 
