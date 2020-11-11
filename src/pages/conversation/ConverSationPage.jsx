@@ -21,6 +21,32 @@ export function ConversationPage() {
             <div className="myroot">
                 <ListOfProjects onSelected={onSelectedProject} selected={selectedProject} projects={projects} />
                 <ConversationContainer selectedChat={selectedChat} />
+                <div className="master">
+                    <input type="text" className="searchProject rounded-xl px-4 py-1" placeholder="Search..." />
+                    <div>
+                        <div className="tim">
+                            <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                            <p className="leading-relaxed mt-2">Faqih Zada</p>
+                            <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
+                        </div>
+                        <div className="tim">
+                            <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
+                            <p className="leading-relaxed mt-2">Ade Sug</p>
+                            <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
+                        </div>
+                        <div className="tim">
+                            <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
+                            <p className="leading-relaxed mt-2">Ziyan F</p>
+                            <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
+                        </div>
+                        <div className="tim">
+                            <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
+                            <p className="leading-relaxed mt-2">Steid-Bot</p>
+                            <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 

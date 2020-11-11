@@ -120,6 +120,14 @@ export function DashboardPage() {
                                 </div>
                                 <div className="tim">
                                     <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
+                                    <p className="leading-relaxed mt-2">Membuat Navbar</p>
+                                </div>
+                                <div className="tim">
+                                    <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
+                                    <p className="leading-relaxed mt-2">Membuat Sidebar</p>
+                                </div>
+                                <div className="tim">
+                                    <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
                                     <p className="leading-relaxed mt-2">Memngecek Email</p>
                                 </div>
                             </div>

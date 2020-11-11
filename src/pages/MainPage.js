@@ -3,7 +3,9 @@ import { TopNav } from '../components/TopNav';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { DashboardPage } from './home/Dashboard';
 import { BoardPage } from './board/BoardPage';
-import { MeetPage } from './meet/MeetPage';
+import { HomePage } from './home/Home';
+import { LoginPage } from './home/Login';
+import { RegisPage } from './home/Regis';
 import { TimePage } from './timeTracker/TimePage';
 import { ConversationPage } from './conversation/ConverSationPage';
 
@@ -24,10 +26,16 @@ export default function MainPage() {
     return (
         <div>
             <Router>
-                <TopNav  />
+                <TopNav />
                 <Switch>
                     <Route exact path="/">
-                        <DashboardPage />
+                        <HomePage />
+                    </Route>
+                    <Route exact path="/login">
+                        <LoginPage />
+                    </Route>
+                    <Route exact path="/registration">
+                        <RegisPage />
                     </Route>
                     <Route exact path="/dashboard">
                         <DashboardPage />
@@ -41,7 +49,7 @@ export default function MainPage() {
                     <Route path="/conversation">
                         <ConversationPage />
                     </Route>
-                </Switch>                    
+                </Switch>
             </Router>
 
         </div>

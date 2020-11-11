@@ -12,7 +12,7 @@
 .master{
     /* padding-top: 160; */
     overflow-y: scroll;
-    height: 100vh;
+    height: 86.8vh;
     /* padding-top: 6.5%; */
     overflow-x: scroll;
     /* position: fixed; */
@@ -25,16 +25,15 @@
     /* padding-top: 25px; */
     justify-content: space-between;
     /* overflow-y: scroll; */
-    height: 100vh;
+    height: 86.8vh;
     flex-grow: 4;
     background-color: #04555C;
 }
 .nameChat{
-    margin-top: -4px;
     margin-left: 0;
     background-color: #04555C;
     z-index: 1;
-    width: 81.7%;
+    width: 65.2%;
 }
 
 .searchProject {
@@ -83,7 +82,7 @@
 .detail-top{
     display: flex;
     flex: 1;
-    padding: 8% 2% 0;
+    padding: 10% 2% 0;
     overflow-y: scroll;
     flex-direction: column;
     align-self: stretch;
