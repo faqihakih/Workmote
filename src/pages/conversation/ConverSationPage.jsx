@@ -30,17 +30,12 @@ export function ConversationPage() {
                             <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
                         </div>
                         <div className="tim">
-                            <span className="iconify" width="40px" data-icon="emojione:blond-haired-person-light-skin-tone" data-inline="false" />
-                            <p className="leading-relaxed mt-2">Ade Sug</p>
-                            <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
-                        </div>
-                        <div className="tim">
                             <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
                             <p className="leading-relaxed mt-2">Ziyan F</p>
                             <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
                         </div>
                         <div className="tim">
-                            <span className="iconify" width="40px" data-icon="emojione:person-frowning-light-skin-tone" data-inline="false" />
+                            <span className="iconify" width="40px" data-icon="gg:bot" data-inline="false" style={{ color: '#04555C' }} />
                             <p className="leading-relaxed mt-2">Steid-Bot</p>
                             <p className="leading-relaxed mt-2"><div className="lingkaran"></div></p>
                         </div>

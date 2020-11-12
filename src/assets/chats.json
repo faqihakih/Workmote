@@ -5,7 +5,7 @@
         "chats": [
             {
                 "id": 1,
-                "message": "Hello world",
+                "message": "Hello guys",
                 "is_me": false,
                 "date": "1 minute ago",
                 "sender": {
@@ -17,7 +17,7 @@
                 "id": 2,
                 "message": "Hello juga",
                 "is_me": true,
-                "date": "2 weeks ago",
+                "date": "1 minute ago",
                 "sender": {
                     "id": 1,
                     "name": "Me"
@@ -27,7 +27,7 @@
                 "id": 3,
                 "message": "@AdeSug Taks Sudah Ditambahkan",
                 "is_me": false,
-                "date": "a weeks ago",
+                "date": "just now",
                 "sender": {
                     "id": 3,
                     "name": "Ziyan"
@@ -41,7 +41,7 @@
         "chats": [
             {
                 "id": 1,
-                "message": "Gelud online",
+                "message": "Ayo semangat semua",
                 "is_me": false,
                 "date": "2 weeks ago",
                 "sender": {
@@ -51,7 +51,7 @@
             },
             {
                 "id": 2,
-                "message": "Seki?",
+                "message": "Ayo Belajar",
                 "is_me": true,
                 "date": "2 weeks ago",
                 "sender": {
@@ -61,7 +61,7 @@
             },
             {
                 "id": 3,
-                "message": "Wani????!!",
+                "message": "belajar apa ?",
                 "is_me": false,
                 "date": "a weeks ago",
                 "sender": {
@@ -87,7 +87,7 @@
             },
             {
                 "id": 2,
-                "message": "di jonggol",
+                "message": "di rumah nenek",
                 "is_me": true,
                 "date": "2 weeks ago",
                 "sender": {
@@ -97,7 +97,7 @@
             },
             {
                 "id": 3,
-                "message": "babeh",
+                "message": "rumah",
                 "is_me": false,
                 "date": "a weeks ago",
                 "sender": {

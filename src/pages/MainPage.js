@@ -1,5 +1,6 @@
 import React /*, { useState }*/ from 'react';
 import { TopNav } from '../components/TopNav';
+import { TopNavHome } from '../components/TopNavHome';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { DashboardPage } from './home/Dashboard';
 import { BoardPage } from './board/BoardPage';
@@ -26,27 +27,33 @@ export default function MainPage() {
     return (
         <div>
             <Router>
-                <TopNav />
                 <Switch>
                     <Route exact path="/">
+                        <TopNavHome />
                         <HomePage />
                     </Route>
                     <Route exact path="/login">
+                        <TopNavHome />
                         <LoginPage />
                     </Route>
                     <Route exact path="/registration">
+                        <TopNavHome />
                         <RegisPage />
                     </Route>
                     <Route exact path="/dashboard">
+                        <TopNav />
                         <DashboardPage />
                     </Route>
                     <Route exact path="/timeTracker">
+                        <TopNav />
                         <TimePage />
                     </Route>
                     <Route path="/taks">
+                        <TopNav />
                         <BoardPage />
                     </Route>
                     <Route path="/conversation">
+                        <TopNav />
                         <ConversationPage />
                     </Route>
                 </Switch>
