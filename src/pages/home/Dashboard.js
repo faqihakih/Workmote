@@ -5,11 +5,73 @@ import "react-datepicker/dist/react-datepicker.css";
 export function DashboardPage() {
     // const name = "uzumaki bayu"
     const [startDate, setStartDate] = useState(new Date());
+    const [showModal, setShowModal] = React.useState(false);
     return (
         <div className="pt-64 sm:pt-56 md:pt-40 lg:pt-16 dashboard">
             <div className="Pilih flex justify-evenly mt-16 ml-10 sm:ml-0 md:ml-0 lg:ml-0">
-                <Link to="/dashboard" className="tbl mt-6 sm:mt-0 md:mt-0 lg:mt-0">
+                <Link to="/dashboard" className="tbl mt-6 sm:mt-0 md:mt-0 lg:mt-0" onClick={() => setShowModal(true)}>
                     Start</Link>
+
+                {showModal ? (
+                    <>
+                        <div
+                            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                            onClick={() => setShowModal(false)}
+                        >
+                            <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                                {/*content*/}
+                                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                    {/*header*/}
+                                    <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
+                                        <h3 className="text-3xl font-semibold">
+                                            Start Project
+                  </h3>
+                                        <button
+                                            className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                            onClick={() => setShowModal(false)}
+                                        >
+                                            <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                                                ×
+                    </span>
+                                        </button>
+                                    </div>
+                                    {/*body*/}
+                                    <div className="relative p-6 flex-auto">
+                                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
+                                            <option>Pilih Projek</option>
+                                            <option>Projek 1</option>
+                                            <option>Projek 2</option>
+                                            <option>Projek 4</option>
+                                            <option>Projek 5</option>
+                                            <option>Projek Baru</option>
+                                        </select>
+                                    </div>
+                                    {/*footer*/}
+                                    <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
+                                        <button
+                                            className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
+                                            type="button"
+                                            style={{ transition: "all .15s ease" }}
+                                            onClick={() => setShowModal(false)}
+                                        >
+                                            Close
+                  </button>
+                                        <button
+                                            className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                            type="button"
+                                            style={{ transition: "all .15s ease" }}
+                                            onClick={() => setShowModal(false)}
+                                        >
+                                            Ok
+                  </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                    </>
+                ) : null}
+
                 <div>
                     <div class="inline-block relative w-64 mx-8 mb-3">
                         <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
@@ -23,9 +85,9 @@ export function DashboardPage() {
                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                         </div>
                     </div>
-                    <div className="inline-block relative w-64 shadow rounded mx-8">
+                    <div className="inline-block relative w-64 mx-8 shadow rounded">
                         <DatePicker
-                            className="border rounded-xl h-10 px-8"
+                            className="border rounded-xl h-10 px-8 w-64"
                             selected={startDate}
                             onChange={date => setStartDate(date)}
                             isClearable

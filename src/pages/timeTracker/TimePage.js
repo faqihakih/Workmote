@@ -1,22 +1,10 @@
 import React, { useState } from "react";
-// import ReactDOM from "react-dom";
-
-
-// Include the react-fusioncharts component
 import ReactFC from "react-fusioncharts";
-
-// Include the fusioncharts library
 import FusionCharts from "fusioncharts";
-
-// Include the chart type
 import Column2D from "fusioncharts/fusioncharts.charts";
-
-// Include the theme as fusion
 import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-// import { Link } from "react-router-dom";
-// Adding the chart and theme as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 export function TimePage() {
@@ -52,22 +40,18 @@ export function TimePage() {
         }
     ];
 
-    // STEP 3 - Creating the JSON object to store the chart configurations
+
     const chartConfigs = {
-        type: "column2d", // The chart type
-        width: "700", // Width of the chart
-        height: "400", // Height of the chart
-        dataFormat: "json", // Data type
+        type: "column2d",
+        width: "700",
+        height: "400",
+        dataFormat: "json",
         dataSource: {
-            // Chart Configuration
             chart: {
-                //Set the chart caption
                 caption: "WorkStatic",
                 numberSuffix: "Jam",
-                //Set the theme for your chart
                 theme: "fusion"
             },
-            // Chart Data
             data: chartData
         }
     };
@@ -75,7 +59,7 @@ export function TimePage() {
     return (
         <div className="pt-64 sm:pt-56 md:pt-40 lg:pt-20  time">
             <div className="flex justify-end m-5 text-black mb-10">
-                <div class="inline-block relative w-64 mx-8">
+                <div class="inline-block relative w-40 sm:w-56 md:w-40 lg:w-64 mx-8">
                     <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
                         <option>Pilih Projek</option>
                         <option>Projek 1</option>
@@ -89,7 +73,7 @@ export function TimePage() {
                 </div>
                 <div class="inline-block relative w-36">
                     <DatePicker
-                        className="border rounded-xl h-10 px-8"
+                        className="border rounded-xl h-10 px-8 w-40 sm:w-56 md:w-40 lg:w-64"
                         selected={startDate}
                         onChange={date => setStartDate(date)}
                         isClearable
@@ -100,13 +84,13 @@ export function TimePage() {
 
             <div className="container mx-auto">
                 <div className="flex flex-wrap -m-4">
-                    <div className="p-4 mx-auto kartu w-5/6 sm:w-2/3 md:w-2/3 lg:w-2/3 xl:w-2/3">
+                    <div className="p-4 mx-auto kartu w-5/6 sm:w-2/3 md:w-2/3 lg:w-2/3 xl:w-2/3 overflow-auto">
                         <div className="w-full">
-                            <ReactFC  {...chartConfigs} className="overflow-auto" />
+                            <ReactFC  {...chartConfigs} className="overflow-auto sm:overflow-auto md:overflow-auto lg:overflow-auto" />
                         </div>
                     </div>
-                    <div class="p-4 mx-auto lg:w-1/3 md:w-full">
-                        <div class="flex kotak shadow rounded-2xl p-8 sm:flex-row flex-col">
+                    <div class="p-4 mx-auto lg:w-1/3 md:w-full sm: w-full">
+                        <div class="flex kotak shadow rounded-2xl p-4 sm:flex-row flex-col">
                             <div class="flex-grow kotakDua">
                                 <h2 className="text-center text-3xl underline judulDua text-white mb-10">Waktu Kerja Tim</h2>
                                 <div className="tim">

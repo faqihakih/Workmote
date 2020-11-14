@@ -1,6 +1,4 @@
 import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 
 export const ListOfProjects = ({ projects, selected = null, onSelected }) => {
 
@@ -11,7 +9,7 @@ export const ListOfProjects = ({ projects, selected = null, onSelected }) => {
                 {
                     projects.map((project, i) => {
                         return (
-                            <div onClick={() => onSelected(project)} key={i.toString()} className={selected !== null && selected.id == project.id ? "projectItemSelected" : "projectItem"}>
+                            <div onClick={() => onSelected(project)} key={i.toString()} className={selected !== null && selected.id === project.id ? "projectItemSelected" : "projectItem"}>
                                 <h4 className="flex justify-center">{project.name}</h4>
                                 {/* <p>{project.description}</p> */}
                             </div>

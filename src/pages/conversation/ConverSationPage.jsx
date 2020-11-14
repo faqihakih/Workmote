@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { ConversationContainer } from '../../components/conversations/ConversationContainer';
 import { ListOfProjects } from '../../components/projects/ListOfProjects';
 import './ConversationStyles.css';
