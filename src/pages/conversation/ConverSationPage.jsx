@@ -9,7 +9,7 @@ import { useState } from 'react';
 export function ConversationPage() {
     const [selectedProject, setSelectedProject] = useState(projectsData.projects[0])
     const [selectedChat, setSelectedChat] = useState(chatsData[0])
-    const [projects, setProjects] = useState(projectsData.projects)
+    const [projects /*, setProjects*/] = useState(projectsData.projects)
 
     const onSelectedProject = (p) => {
         setSelectedProject(p)
