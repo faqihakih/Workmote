@@ -13,7 +13,7 @@ export function HomePage() {
                             <p className="desc mb-10">Memudahkan anda dalam bekerja secara remote</p>
                             <Link to="/login" className="tbl">Mulai</Link>
                         </div>
-                        <img alt="ecommerce" className="w-full lg:h-auto md:h-auto sm:h-auto h-auto object-cover object-center rounded" src="https://res.cloudinary.com/zada/image/upload/v1605893388/home-min_alv1jf.png" />
+                        <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto md:h-auto sm:h-auto h-auto object-cover object-center rounded" src="https://res.cloudinary.com/zada/image/upload/v1605893388/home-min_alv1jf.png" />
                     </div>
                 </div>
                 <div className="container px-5 mx-auto">

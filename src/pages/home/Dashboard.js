@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 export function DashboardPage() {
-    // const name = "uzumaki bayu"
     const [startDate, setStartDate] = useState(new Date());
     const [showModal, setShowModal] = React.useState(false);
     return (
@@ -19,23 +18,19 @@ export function DashboardPage() {
                             onClick={() => setShowModal(false)}
                         >
                             <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                                {/*content*/}
                                 <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                                    {/*header*/}
                                     <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
                                         <h3 className="text-3xl font-semibold">
                                             Start Project
-                  </h3>
+                                        </h3>
                                         <button
                                             className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                                            onClick={() => setShowModal(false)}
-                                        >
+                                            onClick={() => setShowModal(false)}>
                                             <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
                                                 ×
-                    </span>
+                                            </span>
                                         </button>
                                     </div>
-                                    {/*body*/}
                                     <div className="relative p-6 flex-auto">
                                         <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
                                             <option>Pilih Projek</option>
@@ -46,24 +41,21 @@ export function DashboardPage() {
                                             <option>Projek Baru</option>
                                         </select>
                                     </div>
-                                    {/*footer*/}
                                     <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
                                         <button
                                             className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
                                             type="button"
                                             style={{ transition: "all .15s ease" }}
-                                            onClick={() => setShowModal(false)}
-                                        >
+                                            onClick={() => setShowModal(false)}>
                                             Close
-                  </button>
+                                        </button>
                                         <button
                                             className="bg-green-500 text-white active:bg-green-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
                                             type="button"
                                             style={{ transition: "all .15s ease" }}
-                                            onClick={() => setShowModal(false)}
-                                        >
+                                            onClick={() => setShowModal(false)}>
                                             Ok
-                  </button>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -71,7 +63,6 @@ export function DashboardPage() {
                         <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
                     </>
                 ) : null}
-
                 <div>
                     <div className="inline-block relative w-64 mx-8 mb-3">
                         <select className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
@@ -91,8 +82,7 @@ export function DashboardPage() {
                             selected={startDate}
                             onChange={date => setStartDate(date)}
                             isClearable
-                            placeholderText="Pilih Hari"
-                        />
+                            placeholderText="Pilih Hari" />
                     </div>
                 </div>
             </div>
@@ -104,7 +94,6 @@ export function DashboardPage() {
                             <div className="text-center">
                                 <div className="flex justify-center">
                                     <div className="h-12 w-12 rounded-md">
-                                        {/* Heroicon name: globe-alt */}
                                         <span className="iconify" width="35px" data-icon="bi:clock-history" data-inline="false" style={{ color: '#04555C' }} />
                                     </div>
                                 </div>
@@ -118,7 +107,6 @@ export function DashboardPage() {
                             <div className="text-center">
                                 <div className="flex justify-center">
                                     <div className="h-12 w-12 rounded-md">
-                                        {/* Heroicon name: globe-alt */}
                                         <span className="iconify" width="35px" data-icon="bx:bxs-edit" data-inline="false" style={{ color: '#04555C' }}></span>
                                     </div>
                                 </div>
@@ -132,7 +120,6 @@ export function DashboardPage() {
                             <div className="text-center">
                                 <div className="flex justify-center">
                                     <div className="h-12 w-12 rounded-md">
-                                        {/* Heroicon name: globe-alt */}
                                         <span className="iconify" width="35px" data-icon="icons8:todo-list" data-inline="false" style={{ color: '#04555C' }} />
                                     </div>
                                 </div>
@@ -145,7 +132,6 @@ export function DashboardPage() {
                     </ul>
                 </div>
             </div>
-
             <section className="body-font">
                 <div className="container px-5 my-10 mx-auto kotak rounded-xl shadow p-10">
                     <div className="flex flex-wrap -m-4">
@@ -198,6 +184,5 @@ export function DashboardPage() {
                 </div>
             </section>
         </div>
-
     )
 }
