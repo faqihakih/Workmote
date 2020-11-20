@@ -4,7 +4,7 @@ import React from "react";
 
 export function LoginPage() {
     return (
-        <div className="pt-64 sm:pt-56 md:pt-32 lg:pt-20">
+        <div className="pt-16 sm:pt-20 md:pt-16 lg:pt-16">
             <h2 className="title-font tracking-widest titleDua ml-20">Work</h2>
             <h2 className="title-font tracking-widest titleDua ml-32"><b>Mote</b></h2>
             <section className="text-gray-700 body-font relative">
@@ -20,8 +20,8 @@ export function LoginPage() {
                         <Link to="/dashboard" className="text-white text-center border-0 py-2 px-6 rounded-full py-2 px-4 tbl">Masuk</Link>
                         <Link to="/registration" className="text-xs text-center text-gray-500 mt-3"><b>Belum Punya Akun ?</b></Link>
                     </div>
-                    <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-                        <img alt="ecommerce" className="w-full lg:h-auto h-64 object-cover object-center rounded" src={require('./../../assets/img/login.png')} />
+                    <div className="lg:w-2/3 md:w-1/2  rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                        <img alt="ecommerce" className="w-full lg:h-auto md:h-auto sm:h-auto h-auto object-cover object-center rounded" src="https://res.cloudinary.com/zada/image/upload/v1605893419/login-min_ugp9dm.png" />
                     </div>
                 </div>
             </section>

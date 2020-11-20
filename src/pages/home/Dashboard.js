@@ -73,16 +73,16 @@ export function DashboardPage() {
                 ) : null}
 
                 <div>
-                    <div class="inline-block relative w-64 mx-8 mb-3">
-                        <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
+                    <div className="inline-block relative w-64 mx-8 mb-3">
+                        <select className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-xl shadow leading-tight focus:outline-none focus:shadow-outline">
                             <option>Pilih Projek</option>
                             <option>Projek 1</option>
                             <option>Projek 2</option>
                             <option>Projek 4</option>
                             <option>Projek 5</option>
                         </select>
-                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                         </div>
                     </div>
                     <div className="inline-block relative w-64 mx-8 shadow rounded">
@@ -173,23 +173,23 @@ export function DashboardPage() {
                             <div className="h-full kotakDua shadow p-8 rounded-xl">
                                 <h2 className="text-center text-3xl underline judul">Rencana Terlaksana</h2>
                                 <div className="tim">
-                                    <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
+                                    <span className="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
                                     <p className="leading-relaxed mt-2">Membuat Logo</p>
                                 </div>
                                 <div className="tim">
-                                    <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
+                                    <span className="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
                                     <p className="leading-relaxed mt-2">Membuat Laporan</p>
                                 </div>
                                 <div className="tim">
-                                    <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
+                                    <span className="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
                                     <p className="leading-relaxed mt-2">Membuat Navbar</p>
                                 </div>
                                 <div className="tim">
-                                    <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
+                                    <span className="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
                                     <p className="leading-relaxed mt-2">Membuat Sidebar</p>
                                 </div>
                                 <div className="tim">
-                                    <span class="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
+                                    <span className="iconify" width="40px" data-icon="ic:baseline-done" data-inline="false" style={{ color: '#04555C' }}></span>
                                     <p className="leading-relaxed mt-2">Memngecek Email</p>
                                 </div>
                             </div>

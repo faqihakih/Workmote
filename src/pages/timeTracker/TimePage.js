@@ -118,29 +118,29 @@ export function TimePage() {
             <div className="kotak shadow rounded-2xl kontener">
                 <h3 className="text-center text-black font-bold text-3xl">Hasil Tangkap Layar</h3>
                 <div className="grid galery gap-4 text-black">
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 06.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 07.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 08.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 09.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 10.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 11.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 13.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 14.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 15.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 16.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 17.00</figcaption></div>
-                    <div className="item"><img src={require('./../../assets/img/ss.jpg')} width="100%" alt="logo" />
+                    <div className="item"><img src="https://res.cloudinary.com/zada/image/upload/v1605892101/ss_xgkhp5.jpg" width="100%" alt="logo" />
                         <figcaption className="text-black text-center text-sm">pukul 18.00</figcaption></div>
                 </div>
             </div>
